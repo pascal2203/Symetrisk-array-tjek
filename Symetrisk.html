@@ -1,0 +1,77 @@
+<html>
+<head>
+
+</head>
+
+
+<body>
+    <script>
+        let usymetrisk1 = [1, 2, 3, 4, 5]
+        let symetrisk1 = [1, 1, 2, 2, 1, 1]
+        let usymetrisk2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        let symetrisk2 = [1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1]
+        let usymetrisk3 = [1, 5]
+        let symetrisk3 = [1]
+        function symetrisktjek(tjek) {
+            for (i = 0; i < tjek.length; i++) {
+                if (tjek[i] != tjek[tjek.length - 1 - i])
+                    return false
+            }
+            return true
+        }
+
+        console.log(symetrisktjek(usymetrisk1))
+        console.log(symetrisktjek(symetrisk1))
+        console.log(symetrisktjek(usymetrisk2))
+        console.log(symetrisktjek(symetrisk2))
+        console.log(symetrisktjek(usymetrisk3))
+        console.log(symetrisktjek(symetrisk3))
+
+
+    </script>
+
+</body>
+</html>
+
+
+
+<!--
+<html>
+<head>
+
+</head>
+
+
+<body>
+    <script>
+
+        class symetrisktjekker {
+            constructor(array) {
+                symetrisktjek(array)
+            }
+            symetrisktjekker;log(symetrisktjek:any)
+
+            symetrisktjek(array) {
+                for (i = 0; i < array.length; i++) {
+                    if (array[i] != array[array.length - 1 - i])
+                    console.log (false)
+                    return false
+            }
+            console.log(true)
+            return true
+        }
+
+    let usymetrisk1 = new symetrisktjekker([1, 2, 3, 4, 5])
+    let symetrisk1 = new symetrisktjekker([1, 1, 2, 2, 1, 1])
+    let usymetrisk2 = new symetrisktjekker([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16])
+    let symetrisk2 = new symetrisktjekker([1, 1, 2, 2, 1, 1, 1, 1, 2, 2, 1, 1])
+    let usymetrisk3 = new symetrisktjekker([1, 5])
+    let symetrisk3 = new symetrisktjekker([1])
+
+
+    </script>
+
+</body>
+</html>
+
+-->
